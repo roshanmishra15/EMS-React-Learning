@@ -1,0 +1,127 @@
+/* ================================
+   Employee Table
+================================ */
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    font-size: 14px;
+}
+
+
+/* ================================
+   Table Header
+================================ */
+
+table th {
+    padding: 15px 18px;
+
+    background: #f8fafc;
+
+    color: #475569;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    text-align: left;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    white-space: nowrap;
+}
+
+
+/* ================================
+   Table Body
+================================ */
+
+table td {
+    padding: 16px 18px;
+
+    color: #334155;
+
+    border-bottom: 1px solid #f1f5f9;
+
+    white-space: nowrap;
+}
+
+
+/* ================================
+   Row
+================================ */
+
+table tbody tr {
+    transition: background 0.2s ease;
+}
+
+table tbody tr:hover {
+    background: #f8fafc;
+}
+
+
+/* Remove last border */
+
+table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* ================================
+   EID
+================================ */
+
+table th:first-child,
+table td:first-child {
+    color: #2563eb;
+    font-weight: 600;
+}
+
+
+/* ================================
+   Actions
+================================ */
+
+table th:last-child,
+table td:last-child {
+    text-align: center;
+}
+
+
+/* ================================
+   Empty Row
+================================ */
+
+table tbody tr:empty {
+    height: 80px;
+}
+
+
+/* ================================
+   Responsive
+================================ */
+
+@media (max-width: 768px) {
+
+    table {
+        min-width: 700px;
+    }
+
+    .table-wrapper {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    table th,
+    table td {
+        padding: 13px 14px;
+    }
+}
