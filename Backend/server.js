@@ -7,7 +7,7 @@ const dotenv = require("dotenv");
 const cors = require("cors");
 const authRoutes = require("../Backend/routes/authRoutes");
 const connectDB = require("./config/db");
-
+const employeeRoutes = require("../Backend/routes/employeeRoutes")
 dotenv.config();
 
 const app = express();
@@ -15,6 +15,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use("/auth", authRoutes)
+app.use("/emp", employeeRoutes)
 connectDB();
 
 app.get("/", (req, res) => {

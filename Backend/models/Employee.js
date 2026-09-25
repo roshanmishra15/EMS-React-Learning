@@ -8,7 +8,6 @@ const EmpSchema = new mongoose.Schema({
     employeeName : {
         type : String,
         required : true,
-        unique:true
     },
     mobile : {
         type: String,
@@ -28,6 +27,7 @@ const EmpSchema = new mongoose.Schema({
         required:true
     },
     status:{
+        type:String,
         required:true,
         default:"Active"
     }
@@ -35,4 +35,4 @@ const EmpSchema = new mongoose.Schema({
     timestamps:true
 }
 )
-module.exports = mongoose.model("Employee", employeeSchema);
+module.exports = mongoose.model("Employee", EmpSchema);
