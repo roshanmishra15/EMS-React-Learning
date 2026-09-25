@@ -1,7 +1,7 @@
 import React from 'react';
 import './css/Header.css';
 
-function Header() {
+function Header({setIsModalOpen}) {
   return (
     <div className="header-section">
 
@@ -47,7 +47,7 @@ function Header() {
           Export Excel
         </button>
 
-        <button className="add-employee-btn">
+        <button className="add-employee-btn" onClick={()=> setIsModalOpen(true)}>
           <span>+</span>
           Add Employee
         </button>

@@ -9,7 +9,7 @@ table {
 
     background: #ffffff;
 
-    border: 1px solid #e5e7eb;
+    border: 1px solid #e2e8f0;
     border-radius: 12px;
 
     overflow: hidden;
@@ -34,7 +34,7 @@ table th {
 
     text-align: left;
 
-    border-bottom: 1px solid #e5e7eb;
+    border-bottom: 1px solid #e2e8f0;
 
     white-space: nowrap;
 }
@@ -52,6 +52,8 @@ table td {
     border-bottom: 1px solid #f1f5f9;
 
     white-space: nowrap;
+
+    vertical-align: middle;
 }
 
 
@@ -97,6 +99,65 @@ table td:last-child {
 
 
 /* ================================
+   Action Buttons
+================================ */
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 7px;
+}
+
+
+/* Common Button */
+
+.btn button {
+    border: 1px solid transparent;
+
+    padding: 7px 13px;
+
+    border-radius: 7px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+
+/* Edit Button */
+
+.btn button:first-child {
+    background: #eff6ff;
+    color: #2563eb;
+    border-color: #bfdbfe;
+}
+
+.btn button:first-child:hover {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+
+/* Delete Button */
+
+.btn button:last-child {
+    background: #fef2f2;
+    color: #dc2626;
+    border-color: #fecaca;
+}
+
+.btn button:last-child:hover {
+    background: #dc2626;
+    color: #ffffff;
+}
+
+
+/* ================================
    Empty Row
 ================================ */
 
@@ -112,7 +173,7 @@ table tbody tr:empty {
 @media (max-width: 768px) {
 
     table {
-        min-width: 700px;
+        min-width: 900px;
     }
 
     .table-wrapper {

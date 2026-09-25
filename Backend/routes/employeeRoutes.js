@@ -4,6 +4,6 @@ const express = require("express");
 const router = express.Router();
 
 router.post("/add",authmiddleware, addEmployee);
-router.post("/`getemployee`",authmiddleware, getEmployee);
+router.get("/getemployee",authmiddleware, getEmployee);
 
 module.exports = router;
